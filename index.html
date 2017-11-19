@@ -1,30 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Khoa Pham WebRTC</title>
-        <script src="jquery.js"></script>
-        <script src="peer.js"></script>
-        <script src="socket.io.js"></script>
-		<script src="adapter.js"></script>
-    </head>
-    <body>
-        <div id="div-chat">
-            <p>Online user:</p>
-            <ul id="ulUser">
-            </ul>
-            <h3 id="my-peer">Your Id: </h3>
-            <video id="localStream" width="300" controls></video>
-            <br /><br />
-            <video id="remoteStream" width="300" controls></video>
-            <br /><br />
-            <input type="text" id="remoteId" placeholder="Remote ID">
-            <button id="btnCall">Call</button>
-        </div>
-        <div id="div-dang-ky">
-            <br /><br />
-            <input type="text" id="txtUsername" placeholder="Enter your username">
-            <button id="btnSignUp">Sign Up</button>
-        </div>
-    </body>
-    <script src="main.js"></script>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>OTManagement</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/OTManagement.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 100%; height: 100%"></div>
+    </div>
+  </body>
 </html>
